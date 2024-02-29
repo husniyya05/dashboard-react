@@ -21,7 +21,7 @@ export const GeneralHead = styled.div`
 
   i {
     font-size: 14px;
-    color:  #476559;
+    color: #476559;
     margin: 3px 12px 0 0;
   }
   h3 {
@@ -207,13 +207,19 @@ export const Weekly = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  padding: 20px 0;
   h1 {
     font-size: 18px;
     color: #475569;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   h2 {
     color: #1e3a8a;
     font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 `;
 export const Diagram = styled.div`
@@ -228,21 +234,39 @@ export const DiagramSales = styled.div`
   padding: 20px;
   background-color: white;
   border: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: center;
   img {
     width: 100%;
   }
 `;
+export const DiagramSales2 = styled.div`
+  box-shadow: 0 3px 5px #0000000b;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: center;
+  width: 140px;
+  height: 324px;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+`;
+
 export const Width1 = styled.div`
-  width: 50%;
+  width: 51%;
 `;
 export const Width2 = styled.div`
-  width: 50%;
+  width: 49%;
   display: flex;
-  gap: 30px;
+  gap: 10px;
 `;
 export const Flex = styled.div`
   display: flex;
-  gap: 30px;
+  gap: 10px;
   padding: 40px 0;
 `;
 export const OfficalStore = styled.div`
@@ -308,6 +332,7 @@ export const User = styled.div`
     width: 40px;
     height: 45px;
     border-radius: 5px;
+    object-fit: cover;
   }
 `;
 export const TextSeller = styled.div`
@@ -396,7 +421,7 @@ export const ImgBox = styled.td`
   display: flex;
   position: relative;
   padding: 12px 40px 40px 20px;
-  margin:0;
+  margin: 0;
 
   .a {
     width: 50px;
@@ -406,19 +431,19 @@ export const ImgBox = styled.td`
     position: absolute;
     z-index: 1;
     left: 0;
-    top:0;
-    margin:0;
+    top: 0;
+    margin: 0;
   }
   .b {
     width: 50px;
     height: 50px;
-    margin:0;
+    margin: 0;
     border-radius: 100%;
     border: 3px solid #fff;
     position: absolute;
     z-index: 2;
     left: 30px;
-    top:0;
+    top: 0;
   }
   .c {
     width: 50px;
@@ -456,7 +481,7 @@ export const Number = styled.div`
 export const TopList = styled.div`
   display: flex;
   justify-content: space-around;
-  align-items:center;
+  align-items: center;
   box-shadow: 0 3px 5px #0000000b;
   border-radius: 15px;
   background-color: white;
@@ -466,9 +491,9 @@ export const TopList = styled.div`
 `;
 export const Status = styled.div`
   padding: 12px 20px;
-  display:flex;
+  display: flex;
   gap: 7px;
-  i{
+  i {
     color: #dc2626;
     font-size: 14px;
     padding-top: 3px;
@@ -485,7 +510,7 @@ export const Status = styled.div`
   //     background-color: yellow;
   // }
 `;
-export const Action= styled.div`
+export const Action = styled.div`
   padding: 12px 20px;
   gap: 10px;
   .edit {
@@ -495,8 +520,8 @@ export const Action= styled.div`
     border: none;
     background-color: #fff;
     padding: 0 10px;
-    i{
-      padding-left:5px;
+    i {
+      padding-left: 5px;
     }
   }
   .delete {
@@ -506,10 +531,9 @@ export const Action= styled.div`
     border: none;
     background-color: #fff;
     padding: 0 10px;
-    i{
-      padding-left:5px;
+    i {
+      padding-left: 5px;
     }
-
   }
 `;
 

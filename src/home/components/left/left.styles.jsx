@@ -3,12 +3,16 @@ import styled from "styled-components";
 export const LeftFull=styled.div`
 background: #1a3692;
 width:18%;
-border-radius: 20px;
+border-radius:  20px 0 20px 20px ;
 ul{
     list-style: none;
     padding: 15px 20px;
 }
 `
+export const LiPadding=styled.li`
+padding: 5px 0;
+`
+
 export const Dashboard=styled.div`
 display: flex;
 align-items: center;
@@ -29,6 +33,26 @@ h6{
 
 }
 `
+export const DashboardNone=styled.div`
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 15px;
+border-radius: 8px;
+
+i{
+    color: #fff;
+    font-size: 14px;
+}
+h6{
+    font-size: 14px;
+    margin: 0 0 0 12px;
+    color: #fff;
+    font-weight: 600;
+
+}
+`
+
 export const Home=styled.div`
 display: flex;
 `

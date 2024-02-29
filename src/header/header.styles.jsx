@@ -5,22 +5,25 @@ background-color: #1e40ad;
 padding:10px 32px;
 display: flex;
 justify-content:space-between;
+border-bottom: 1px solid #5379af;
 `
 export const Icewoll=styled.div`
 display:flex;
-border-right: 1px solid #5379af;
-border-bottom: 1px solid #5379af;
-padding-right: 7px;
 
 `
+export const Search=styled.div`
+position: relative;
+`
+
 export const Img=styled.img`
 width:30px;
 `
 export const Text=styled.h1`
 font-size:18px;
 color:#fff;
-margin-left:12px;
 font-weight:600;
+padding: 0 10px 0  ;
+margin: 0;
 `
 export const Ahref=styled.a`
 text-decoration: none;
@@ -48,20 +51,19 @@ justify-content: space-between;
 gap: 20px;
 `
 export const Input=styled.input`
-padding:10px 32px 8px 12px;
+padding:10px 32px 8px 15px;
 background-color:E2E8F0;
 border-radius:20px;
 border:none;
 font-size:15px;
 font-weight:500;
 color:#b3b3b3;
-position: relative;
+
 `
 export const Icon=styled.i`
-position: relative;
-right:  50px;
-display: flex;
-align-items: center;
+position: absolute;
+right:15px;
+top: 10px;
 color:#64748B;
 `
 export const IconAhref=styled.i`

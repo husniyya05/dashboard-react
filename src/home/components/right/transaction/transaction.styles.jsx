@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Full = styled.div`
   padding: 20px;
   background-color: #f1f5f9;
+  border-radius: 0 20px 0 0;
 `;
 export const TransactionFull = styled.div`
   h1 {
@@ -89,6 +90,7 @@ export const RecImg = styled.div`
     width: 40px;
     height: 40px;
     border-radius: 100%;
+    object-fit: cover;
   }
 `;
 export const Recent = styled.div`
@@ -98,7 +100,7 @@ export const Recent = styled.div`
 export const RecentBorder = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   padding: 12px 20px;
   box-shadow: 0 3px 5px #0000000b;
   border-radius: 10px;
@@ -116,6 +118,7 @@ export const RecentBorder = styled.div`
     transform: scale(1);
     cursor: pointer;
   }
+  
 `;
 export const RecentText = styled.div`
   margin: 0 0 0 16px;
@@ -144,11 +147,17 @@ export const RecentFull = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
+  position:relative;
+  z-index:2;
   &::before {
     content: "";
-    background-color: yellow;
-    width: 3px;
-    height: 50px;
+    background-color: #e2e8f0;
+    width: 1px;
+    height: 350px;
+    position: absolute;
+    top:20px;
+    left: 18px;
+    z-index:-1;
   }
 `;
 
@@ -232,3 +241,7 @@ export const LoremButton = styled.div`
     background: #fff;
   }
 `;
+export const Empty=styled.div`
+height:314px;
+
+`

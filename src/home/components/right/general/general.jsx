@@ -47,6 +47,7 @@ import {
   StatisticaImg,
   Table,
   Action,
+  DiagramSales2,
 } from "./general.styles";
 import Photo from "../../../../assets/rasel.jpg";
 import A from "../../../../assets/a.jpg";
@@ -77,6 +78,30 @@ const General = () => {
       number: 50,
     },
   ];
+  const sellersObj = [
+    {
+      title: "Russel Crowe",
+      date: "25 April 2022",
+      count: 137,
+    },
+    {
+      title: "Tom Cruise",
+      date: "29 Mart 2024",
+      count: 125,
+    },
+    {
+      title: "Tom Hardy",
+      date: "25 April 2022",
+      count: 96,
+    },
+
+    {
+      title: "Jhonny Deep",
+      date: "13 May 2022",
+      count: 142,
+    },
+  ];
+
   return (
     <Full>
       <div>
@@ -204,7 +229,7 @@ const General = () => {
           <div>
             <Weekly>
               <h1>Weekly Top Saller</h1>
-              <h2>Show More</h2>
+              <h2>Show  </h2>
             </Weekly>
             <DiagramSales>
               <img src={DiagramImg} alt="" />
@@ -213,11 +238,11 @@ const General = () => {
           <div>
             <Weekly>
               <h1> Sales Report</h1>
-              <h2>Show More</h2>
+              <h2>Show</h2>
             </Weekly>
-            <DiagramSales>
+            <DiagramSales2>
               <img src={DiagramImg2} alt="" />
-            </DiagramSales>
+            </DiagramSales2>
           </div>
         </Width2>
       </Flex>
@@ -242,55 +267,21 @@ const General = () => {
 
         <BestSeller>
           <h1>Weekle Best Sellers</h1>
-
-          <Sellers>
-            <User>
-              <img src={Photo} alt="" />
-              <TextSeller>
-                <h1>Russel Crowe</h1>
-                <h2>25 April 2022</h2>
-              </TextSeller>
-            </User>
-            <Seler136>
-              <h1>137 Sales</h1>
-            </Seler136>
-          </Sellers>
-          <Sellers>
+          {sellersObj.map((e, index) => (
+          <Sellers key={index}>
             <User>
               <img src={Pit} alt="" />
               <TextSeller>
-                <h1>Brad Pitt</h1>
-                <h2>12 May 2023</h2>
+                <h1>{e.title}</h1>
+                <h2>{e.date}</h2>
               </TextSeller>
             </User>
             <Seler136>
-              <h1>137 Sales</h1>
+              <h1>{e.count} Sales</h1>
             </Seler136>
           </Sellers>
-          <Sellers>
-            <User>
-              <img src={TomImg} alt="" />
-              <TextSeller>
-                <h1>Tom Hardy</h1>
-                <h2>19 August 2022</h2>
-              </TextSeller>
-            </User>
-            <Seler136>
-              <h1>137 Sales</h1>
-            </Seler136>
-          </Sellers>
-          <Sellers>
-            <User>
-              <img src={Photo} alt="" />
-              <TextSeller>
-                <h1>Russel Crowe</h1>
-                <h2>25 April 2022</h2>
-              </TextSeller>
-            </User>
-            <Seler136>
-              <h1>137 Sales</h1>
-            </Seler136>
-          </Sellers>
+        ))}
+
           <Button>Viev More</Button>
         </BestSeller>
       </Flex2>

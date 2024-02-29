@@ -18,6 +18,7 @@ import {
   ImportantIcon,
   Lorem,
   LoremButton,
+  Empty,
 } from "./transaction.styles";
 import Photo from "../../../../assets/rasel.jpg";
 import AnjeliImg from "../../../../assets/anjeli.jpg";
@@ -34,13 +35,23 @@ const Transaction = () => {
     },
     {
       title: "Tom Cruise",
-      date: "29 Mart 2022",
-      count: 137,
+      date: "29 Mart 2024",
+      count: 125,
+    },
+    {
+      title: "Tom Hardy",
+      date: "25 April 2022",
+      count: 96,
     },
     {
       title: "Russel Crowe",
-      date: "25 April 2022",
+      date: "28 Novemvber 2022",
       count: 137,
+    },
+    {
+      title: "Jhonny Deep",
+      date: "13 May 2022",
+      count: 142,
     },
   ];
   return (
@@ -114,7 +125,7 @@ const Transaction = () => {
             <RecentBorder>
               <RecentText>
                 <h2>Sean Connery</h2>
-                <h4>Has changed Samsung Q90 QLED TV price and description</h4>
+                <h4>Has changed Samsung</h4>
               </RecentText>
               <PM>
                 <h6>07:00 PM</h6>
@@ -160,7 +171,16 @@ const Transaction = () => {
           </LoremButton>
         </Lorem>
       </div>
+
+      <Empty>
+
+
+      </Empty>
+
+
+      
     </Full>
   );
 };
+
 export default Transaction;

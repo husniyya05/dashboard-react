@@ -1,11 +1,11 @@
-import { Dashboard, Home, LI, LeftFull, Overwiev, UL } from "./left.styles";
+import { Dashboard, DashboardNone, Home, LI, LeftFull, Overwiev, UL } from "./left.styles";
 
 const Left = () => {
-  const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
 
-  const handleClick = () => {
-    setIsOpen(!isOpen);
-  };
+    // const handleClick = () => {
+    //   setIsOpen(!isOpen);
+    // };
 
   return (
     <LeftFull>
@@ -81,45 +81,45 @@ const Left = () => {
           </UL>
         </li>
         <li>
-          <Dashboard>
+          <DashboardNone>
             <Home>
               <i className="fa-solid fa-inbox"></i>
               <h6>Inbox</h6>
             </Home>
-          </Dashboard>
+          </DashboardNone>
         </li>
 
         <li>
-          <Dashboard>
+          <DashboardNone>
             <Home>
               <i className="fa-solid fa-inbox"></i>
               <h6>File Manager</h6>
             </Home>
-          </Dashboard>
+          </DashboardNone>
         </li>
         <li>
-          <Dashboard>
+          <DashboardNone>
             <Home>
               <i className="fa-regular fa-message"></i>
               <h6>Chat</h6>
             </Home>
-          </Dashboard>
+          </DashboardNone>
         </li>
         <li>
-          <Dashboard>
+          <DashboardNone>
             <Home>
               <i className="fa-regular fa-calendar"></i>
               <h6>Calendar</h6>
             </Home>
-          </Dashboard>
+          </DashboardNone>
         </li>
         <li>
-          <Dashboard>
+          <DashboardNone>
             <Home>
               <i class="fa-regular fa-file-lines"></i>
               <h6>Post</h6>
             </Home>
-          </Dashboard>
+          </DashboardNone>
         </li>
       </ul>
     </LeftFull>

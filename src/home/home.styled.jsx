@@ -5,6 +5,7 @@ position: relative;
 background-color: #1e40ad;
 width:100%;
 
+
 `
 export const Position=styled.div`
 display:flex;

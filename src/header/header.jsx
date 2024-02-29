@@ -1,32 +1,47 @@
-import Image from "../assets/logo.svg"
-import { Ahref, AhrefBox, Back, Icewoll, Img, Input, Left, PhotoProfil, Right, Text , IconAhref, Icon, IconBell} from "./header.styles"
-import Photo from "../assets/profile-12-XFncj00x.jpg"
+import Image from "../assets/logo.svg";
+import {
+  Ahref,
+  AhrefBox,
+  Back,
+  Icewoll,
+  Img,
+  Input,
+  Left,
+  PhotoProfil,
+  Right,
+  Text,
+  IconAhref,
+  Icon,
+  Search,
+  IconBell,
+} from "./header.styles";
+import Photo from "../assets/profile-12-XFncj00x.jpg";
 const Header = () => {
-    return <Back>
-        <Left>
+  return (
+    <Back>
+      <Left>
         <Icewoll>
-            <Img src={Image} alt="" />
-            <Text>Icewall</Text>
+          <Img src={Image} alt="" />
+          <Text>Icewall</Text>
         </Icewoll>
         <AhrefBox>
-            <Ahref href="">Application</Ahref>
-            <IconAhref className="fa-solid fa-chevron-right"></IconAhref>
-            <Ahref href="">Dashboar</Ahref>
+          <Ahref href="">Application</Ahref>
+          <IconAhref className="fa-solid fa-chevron-right"></IconAhref>
+          <Ahref href="">Dashboar</Ahref>
         </AhrefBox>
-        </Left>
-        <Right>
-        <Input type="text" placeholder="Search..." />
-        <Icon className="fa-solid fa-magnifying-glass"></Icon>
+      </Left>
+      <Right>
+        <Search>
+          <Input type="text" placeholder="Search..." />
+          <Icon className="fa-solid fa-magnifying-glass"></Icon>
+        </Search>
         <IconBell>
-        <i className="fa-regular fa-bell"></i>
+          <i className="fa-regular fa-bell"></i>
         </IconBell>
 
-
         <PhotoProfil src={Photo} alt="" />
-
-        </Right>
-
-
+      </Right>
     </Back>
-}
-export default Header
+  );
+};
+export default Header;
