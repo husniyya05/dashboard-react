@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Full = styled.div`
   padding: 20px;
   background-color: #f1f5f9;
-  border-radius: 0 20px 0 0;
+  border-radius: 0 20px 20px  0;
 `;
 export const TransactionFull = styled.div`
   h1 {
@@ -242,6 +242,6 @@ export const LoremButton = styled.div`
   }
 `;
 export const Empty=styled.div`
-height:314px;
+height:327px;
 
 `

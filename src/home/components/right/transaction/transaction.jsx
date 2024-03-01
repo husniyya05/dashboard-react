@@ -24,7 +24,6 @@ import Photo from "../../../../assets/rasel.jpg";
 import AnjeliImg from "../../../../assets/anjeli.jpg";
 import RaselImg from "../../../../assets/rasel.jpg";
 import TomImg from "../../../../assets/tom.jpg";
-import { useState } from "react";
 
 const Transaction = () => {
   const sellersObj = [

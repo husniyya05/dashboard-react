@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const LeftFull=styled.div`
 background: #1a3692;
 width:18%;
-border-radius:  20px 0 20px 20px ;
+border-radius:  20px 0 0px 20px ;
 ul{
     list-style: none;
     padding: 15px 20px;
@@ -20,6 +20,7 @@ justify-content: space-between;
 background: #FFFFFF14;
 padding: 15px;
 border-radius: 8px;
+margin: 5px 0;
 
 i{
     color: #fff;
@@ -81,4 +82,11 @@ background: #FFFFFF14;
 padding: 15px;
 border-radius: 8px;
 margin: 5px 0;
+`
+
+export const Line=styled.div`
+width: 230px;
+height: 1px;
+background: #5379af;    
+margin: 20px 0;
 `

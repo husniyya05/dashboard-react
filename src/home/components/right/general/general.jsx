@@ -49,7 +49,6 @@ import {
   Action,
   DiagramSales2,
 } from "./general.styles";
-import Photo from "../../../../assets/rasel.jpg";
 import A from "../../../../assets/a.jpg";
 import B from "../../../../assets/b.jpg";
 import C from "../../../../assets/c.jpg";
@@ -57,7 +56,6 @@ import Statistica from "../../../../assets/statistica.png";
 import DiagramImg from "../../../../assets/diagram.png";
 import DiagramImg2 from "../../../../assets/diagram2.png";
 import MapImg from "../../../../assets/map.png";
-import TomImg from "../../../../assets/tom.jpg";
 import Pit from "../../../../assets/profile-12-XFncj00x.jpg";
 
 const General = () => {
@@ -261,7 +259,9 @@ const General = () => {
               250 Official stores in 21 countries, click the marker to see
               location details.
             </P>
+            <div className="mapImg">
             <img src={MapImg} alt="" />
+            </div>
           </BorderRadius>
         </Map>
 
@@ -330,14 +330,14 @@ const General = () => {
                 </td>
                 <td>
                   <Action>
-                    <a className="edit" href="">
-                      <i className="fa-regular fa-square-check"></i>
+                    <div className="edit">
+                    <i className="fa-regular fa-square-check"></i>
                       Edit
-                    </a>
-                    <a className="delete" href="">
-                      <i className="fa-regular fa-trash-can"></i>
+                    </div>
+                    <div className="delete">
+                    <i className="fa-regular fa-trash-can"></i>
                       Delete
-                    </a>
+                    </div>
                   </Action>
                 </td>
               </TopList>

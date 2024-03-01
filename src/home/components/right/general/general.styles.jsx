@@ -300,6 +300,7 @@ export const P = styled.p`
 `;
 export const Map = styled.div`
   width: 60%;
+
 `;
 export const Flex2 = styled.div`
   display: flex;
@@ -370,8 +371,12 @@ export const BorderRadius = styled.div`
   background-color: white;
   border: 1px solid #e2e8f0;
   margin: 10px 0;
-  img {
-    width: 100%;
+  .mapImg{
+    width:440px;
+    height: 300px;
+    img{
+      width:100%;
+    }
   }
 `;
 
@@ -458,7 +463,7 @@ export const ImgBox = styled.td`
   }
 `;
 export const Name = styled.div`
-  padding: 12px 20px;
+padding: 12px 20px;
   h2 {
     color: #475569;
     font-size: 14px;
@@ -471,7 +476,7 @@ export const Name = styled.div`
   }
 `;
 export const Number = styled.div`
-  padding: 12px 20px;
+padding: 12px 20px;
   h2 {
     color: #475569;
     font-size: 14px;
@@ -490,7 +495,7 @@ export const TopList = styled.div`
   width: 100%;
 `;
 export const Status = styled.div`
-  padding: 12px 20px;
+padding: 12px 20px;
   display: flex;
   gap: 7px;
   i {
@@ -511,17 +516,18 @@ export const Status = styled.div`
   // }
 `;
 export const Action = styled.div`
-  padding: 12px 20px;
+padding: 12px 20px;
   gap: 10px;
+  display: flex;
   .edit {
     text-decoration: none;
     color: #475569;
     font-size: 14px;
     border: none;
     background-color: #fff;
-    padding: 0 10px;
+
     i {
-      padding-left: 5px;
+      padding: 0 3px;
     }
   }
   .delete {
@@ -530,9 +536,10 @@ export const Action = styled.div`
     font-size: 14px;
     border: none;
     background-color: #fff;
-    padding: 0 10px;
     i {
-      padding-left: 5px;
+      padding: 0 5px;
+
+
     }
   }
 `;
